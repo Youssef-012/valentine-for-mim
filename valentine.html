@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Valentine's Day ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  text-align: center;
+  color: white;
+}
+.container {
+  padding: 50px;
+}
+.heart-btn {
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px;
+}
+.heart-btn:hover {
+  transform: scale(1.3);
+}
+.hidden {
+  display: none;
+}
+.section {
+  margin-top: 30px;
+  font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Valentine's Day يا ميم ❤️</h1>
+<p>لازم تختاريهم بالترتيب بقى 😏</p>
+
+<button class="heart-btn" onclick="clickHeart(1)">❤️</button>
+<button class="heart-btn" onclick="clickHeart(2)">❤️</button>
+<button class="heart-btn" onclick="clickHeart(3)">❤️</button>
+
+<div id="content" class="section hidden"></div>
+
+</div>
+
+<script>
+let step = 1;
+
+function clickHeart(number) {
+  let content = document.getElementById("content");
+
+  if (number !== step) {
+    alert(" استني بس مستعجلة ليه امشي بالترتيب 🤨");
+    return;
+  }
+
+  content.classList.remove("hidden");
+
+  if (step === 1) {
+    content.innerHTML = `
+      <h2>Fuck You </h2>
+      <p>Fuck You </p>
+<p>Fuck You </p>
+<p>Fuck You </p>
+<p>Fuck You </p>
+<p>Fuck You </p>
+<p>Fuck You </p>
+<p>Fuck You </p>
+      <p>اي خدمة يقلبي ❤️</p>
+    `;
+  }
+
+  if (step === 2) {
+    content.innerHTML = `
+      <h2>تاني مرة 😏</h2>
+      <p>Fuck You برضه 😂</p>
+      <p>كان لازم اعملها تاني بقا عشان انا رخم شوية معلش استحمليني</p>
+    `;
+  }
+
+  if (step === 3) {
+    content.innerHTML = `
+      <h2>القلب الصح بقى 💌</h2>
+
+      <p>بصي بقى… بعيدا عن الرخامة اللي فوق دي كلها </p>
+
+      <p>اول حاجة انا ممتن انك في حياتي.</p>
+
+      <p>وجودك معايا بجد فارقلي اوي 
+</p>
+
+      <p>بحب ان بينا هزار محدش يفهمه غيرنا
+      بحب اني واثق فيكي وقادر اقولك على كل حاجة بتحصل معايا الحلو والوحش.</p>
+
+      <p>حتى وانتي ابعد حد عني يمريم في الحقيقة بس ولله فعليا  انتي اقرب حد كان ليا ومعايا دايما اخر سنتين دول شكرا ليكي بجد🫶🏼  </p>
+
+      <p>عارف ان ده يعتبر ولا حاجة بالنسبة للي تستاهليه انتي او  للي نفسي اعملهولك لو كنتي معايا ،
+      بس حبيت اعمل اي حاجة صغيره كده افكرك بيها قد ايه بحبك .</p>
+
+      <p>عارفه لو زمن رجع بيا تاني ليوم قولتلك فيها بحبك اول مرة؟ كنت هختارك تاني في كل مرة ❤️</p>
+
+<p>اخر حاجة عايز اقولك اني دايما جمبك يميم وقت تحتاجيني رغم ان حضرتك independent women 😂 بس انا معاكي يستي دايما لو في اي حاجة او مفيش</p>
+
+<p>بحبك ❤️</p>
+<p>بحبك ❤️</p>
+<p>بحبك ❤️</p>
+
+<p>بعد كل ده لو قريتي لحد هنا عرفيني بكلمة فك يو على الوتس🦕</p>
+      <p>Happy FUCK YOU Day يا ميمتي 🤍</p>
+    `;
+  }
+
+  step++;
+}
+</script>
+
+</body>
+</html>
